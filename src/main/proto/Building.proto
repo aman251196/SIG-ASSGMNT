@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_multiple_files = true;
+
+package proto.building;
+
+message Building {
+  int32 building_code = 1;
+  int32 total_floors = 2;
+  int32 companies_in_the_building = 3;
+  int32 cafteria_code = 4;
+}
+
+message BuildingList {
+  repeated Building buildings = 1;
+}
